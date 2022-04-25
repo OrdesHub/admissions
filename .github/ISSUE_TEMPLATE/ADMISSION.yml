@@ -1,0 +1,44 @@
+name: Admission Request Issue
+description: 🫵 Issue for application to the community
+title: "[Admission] Name or username"
+labels: ["admission", "presentation"]
+assignees:
+  - borjapazr
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🙏 Grazas por querer formar parte de **OrdesHub**!
+  - type: input
+    id: username
+    attributes:
+      label: Nome de usuario
+      description: 🤖 Por favor, introduce o teu nome de usuario de GitHub
+      placeholder: ex. @borjapazr
+    validations:
+      required: true
+  - type: textarea
+    id: who-are-you
+    attributes:
+      label: Presentación
+      description: 👴 E ti, de quen ves sendo?
+      placeholder: Eu son... Balbino
+    validations:
+      required: true
+  - type: dropdown
+    id: council
+    attributes:
+      label: Concello
+      description: 🏡 De onde ves?
+      options:
+        - Cerceda
+        - Frades
+        - Mesía
+        - Ordes
+        - Oroso
+        - Tordoia
+        - Trazo
+        - Máis aló da Comarca
+    validations:
+      required: false
+
